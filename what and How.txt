@@ -1,0 +1,52 @@
+What is our evapp should look like
+-------
+
+Basic outline of the software architecture and components for a charging station locator with route planner:
+
+(A) Front-end User Interface:
+
+Web or mobile application for users to search for charging stations and plan their routes.
+User interface for inputting vehicle information and selecting charging stations.
+Integration with Google Maps API for mapping and directions.
+
+ Details will be provided later >>>> No:1 
+ 
+(B) Back-end Server:
+
+Server-side code for handling user requests and responding with charging station information.
+Database for storing charging station information, including location, availability, and pricing.
+Integration with third-party APIs to obtain real-time data on charging station availability and pricing.
+
+(C) Automated Data Collection: Future use case NO :1
+
+Integration with power sensors and other IoT devices to collect real-time data on charging station availability, usage, and power consumption.
+Automated data processing and analysis to provide insights on charging station usage patterns and optimize charging station network performance.
+
+(D) Fleet Management Integration: Future use case NO :2 
+
+Integration with fleet management systems to provide charging station information and route planning for electric vehicle fleets.
+API endpoints for fleet management software to access charging station data and request routes.
+Overall, the software architecture would be modular and scalable, allowing for easy integration with third-party APIs and additional features in the future.
+
+=============
+NO :1 Details about how the front would be 
+
+Model APP >> Plugshare >> we need a lot of UI improvements from plugshare 
+
+Incorporating terrain specifics such as inclination and altitude is a great idea ( Model from the  cycling app ) as it can help optimize the electric vehicle's battery usage and range. Here is a possible design for incorporating this feature into the front end of the software:
+
+Collect and display the current location of the user's electric vehicle on the map.
+
+Use Google Maps or another mapping service to get the terrain specifics of the route to the user's desired destination. This can include data on the road incline, altitude changes, and other relevant terrain features.
+
+Use this data to estimate the additional battery power required for uphill travel and the additional energy that can be recovered while going downhill using regenerative braking (KERS).
+
+Display the estimated battery usage and range on the front end so that the user can plan their route accordingly. This can be presented as a graph or chart that shows the battery level at different points on the journey.
+
+Provide suggestions to optimize the user's route based on the terrain specifics. For example, if there is a steep uphill climb, the software can suggest that the user recharge their vehicle at a nearby charging station to avoid running out of battery power.
+
+Allow users to adjust their route preferences based on the terrain specifics. For example, they may choose to take a longer but flatter route to conserve battery power.
+
+Continuously update the battery usage and range estimates based on the vehicle's actual performance, as well as real-time data on traffic and weather conditions.
+
+By incorporating terrain specifics into the front end of the software, users can get a more accurate estimate of their electric vehicle's battery usage and range, as well as optimize their route for maximum efficiency
